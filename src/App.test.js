@@ -32,3 +32,10 @@ test('renders a button', () => {
   expect(button.length).toBe(1);
 });
 //  main branch 
+
+test('renders counter display', () => {
+  const wrapper  = setup();
+  const counterDisplay = findByTestAttr(wrapper, 'counter-display');
+  expect(counterDisplay.length).toBe(1);
+});
+// rama test-branch-1
