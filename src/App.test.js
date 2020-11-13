@@ -27,5 +27,7 @@ test('renders without errors', () => {
 } );
 
 test('renders a button', () => {
-
+  const wrapper  = setup();
+  const button = findByTestAttr(wrapper, 'increment-button');
+  expect(button.length).toBe(1);
 });
